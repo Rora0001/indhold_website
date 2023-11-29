@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#screen {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0e0e0e;
+  padding: 1.2%;
+  background-color: #e7cbcf;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav li {
+  margin-right: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-weight: bold;
+}
+
+.logo img {
+  text-align: center;
+  width: 30%;
+  padding-left: 10%;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.grid_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Opretter to kolonner med samme bredde */
+  gap: 10px; /* Juster dette efter behov for mellemrum mellem kolonner */
+}
+
+.flex_col {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 65px;
+  opacity: 0; /* Sæt initial gennemsigtighed til 0 for at starte usynlig */
+  animation: fadeIn 5s ease forwards; /* Anvend fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.videoer {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 20px; /* Adjust the gap between videos */
+}
+
+.video1 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w * 100) */
+}
+
+.video2 {
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd; /* Optional: Add a border around the videos */
+}
+
+footer {
+  background-color: #e7cbcf;
+  color: #4e4e4e;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons a {
+  color: #4e4e4e;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+
+.grid_diagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.diagram {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.diagram p {
+  font-weight: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.diagram img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
